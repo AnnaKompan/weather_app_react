@@ -1,5 +1,5 @@
 import { ChangeEvent, FormEvent, type JSX } from 'react';
-import optionType from '../types';
+import type { optionType } from '../types';
 
 type Props = {
   term: string;
@@ -40,7 +40,7 @@ const Search = ({
           />
           <ul className="absolute top-9 bg-white ml-1 rounded-b-md">
             {options.map((option: optionType, index: number) => (
-              <li key={`${option.lat}- ${option.lon}`}>
+              <li key={index}>
                 {option.name + '-' + index}
                 <button
                   type="button"
