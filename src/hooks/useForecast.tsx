@@ -14,7 +14,6 @@ const useForecast = () => {
       const response = await fetch(
         `https://api.openweathermap.org/geo/1.0/direct?q=${value.trim()}&limit=5&appid=${apiKey}`
       );
-      console.log(response.status);
       if (!response.ok) {
         const errTxt = await response.text();
         console.log(errTxt);
@@ -24,8 +23,6 @@ const useForecast = () => {
       setOptions(data);
     } catch (err) {
       console.log(err);
-    } finally {
-      console.log('Finally');
     }
   };
 
@@ -49,7 +46,7 @@ const useForecast = () => {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Submitting', city);
+    // console.log('Submitting', term);
     if (!city) return;
     getForecast(city);
   };
