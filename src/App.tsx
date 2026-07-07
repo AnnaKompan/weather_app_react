@@ -2,7 +2,6 @@ import './App.css';
 import Search from './components/Search';
 import useForecast from './hooks/useForecast';
 import Forecast from './components/Forecast';
-import type { forecastType } from './types';
 
 function App() {
   const { term, options, forecast, onInputChange, onOptionSelect, onSubmit } =

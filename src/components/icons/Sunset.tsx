@@ -1,3 +1,5 @@
+import type { JSX } from 'react';
+
 const Sunset = (): JSX.Element => (
   <svg
     width="20"
@@ -14,6 +16,6 @@ const Sunset = (): JSX.Element => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
-export default Sunset
+export default Sunset;

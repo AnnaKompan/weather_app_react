@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, type JSX } from 'react';
+import type { ChangeEvent, FormEvent, JSX } from 'react';
 import type { optionType } from '../types';
 
 type Props = {

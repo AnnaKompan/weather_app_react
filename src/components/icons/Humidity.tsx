@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 const Humidity = (): JSX.Element => (
   <svg
     width="15"

@@ -1,4 +1,6 @@
 import type { forecastType } from '../types';
+import type { JSX } from 'react';
+
 import {
   getSunTime,
   getWindDirection,
@@ -83,7 +85,7 @@ const Forecast = ({ data }: Props): JSX.Element => {
           <Tile
             icon="feels"
             title="Feels like"
-            info={<Degree temp={`${Math.round(today.main.feels_like)}`} />}
+            info={<Degree temp={Math.round(today.main.feels_like)} />}
             description={`Feels ${
               Math.round(today.main.feels_like) < Math.round(today.main.temp)
                 ? 'cooler'
@@ -114,7 +116,7 @@ const Forecast = ({ data }: Props): JSX.Element => {
             icon="visibility"
             title="Visibility"
             info={`${(today.visibility / 1000).toFixed()} km`}
-            description={getVisibilityValue(`${today.visibility}`)}
+            description={getVisibilityValue(today.visibility)}
           />
         </section>
       </div>

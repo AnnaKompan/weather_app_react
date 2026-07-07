@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 const Pop = (): JSX.Element => (
   <svg
     width="15"
@@ -14,6 +15,6 @@ const Pop = (): JSX.Element => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
-export default Pop
+export default Pop;

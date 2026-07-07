@@ -4,11 +4,12 @@ import Pop from './icons/Pop';
 import Pressure from './icons/Pressure';
 import Visibility from './icons/Visibility';
 import Wind from './icons/Wind';
+import type { JSX, ReactNode } from 'react';
 
 type Props = {
   icon: 'wind' | 'feels' | 'humidity' | 'visibility' | 'pressure' | 'pop';
   title: string;
-  info: string | JSX.element;
+  info: ReactNode;
   description: string;
 };
 
@@ -40,21 +41,3 @@ const Tile = ({ icon, title, info, description }: Props): JSX.Element => {
 };
 
 export default Tile;
-{
-  /* wind */
-}
-{
-  /* feels like*/
-}
-{
-  /* humidity*/
-}
-{
-  /* pop*/
-}
-{
-  /* press*/
-}
-{
-  /* visib*/
-}
